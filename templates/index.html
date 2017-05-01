@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <header>
     <meta name = "viewport" content="width=device-width, initial-scale=1" />
@@ -8,17 +9,45 @@
     
 <body>
     <header>
-        <h1>DUBLIN BIKES DATA</h1>
-        <button id="station_30">Fetch Data</button>
-        <button id="station_102">Fetch Data</button>
+        <h1>DUBLIN BIKES</h1>
     </header>
     
-    <h3>My Google Maps Demo</h3>
+    <h3>Click an icon on the map, to view bike station details at that location.</h3>
     <div id="map"></div>  
     
     <div id="bike_info"></div>  
-    <script src="static/main.js"></script>
     
+    <div>
+    	<h3>Bike & Station Availability</h3>
+    	<p>To view bike and station availability, select a station, date and time 
+    		from the drop down lists below. <br> This displays all data for that hour.</p>
+		
+		<!-- drop-down list of stations -->
+		<select id="station_id_dd">
+		</select>
+		
+		<!-- drop-down list of dates -->
+		<select id="date_dd">
+		  <option value="1491696000">09/04/2017</option>
+		  <option value="1491782400">10/04/2017</option>
+		  <option value="1491868800">11/04/2017</option>
+		  <option value="1491955200">12/04/2017</option>
+		  <option value="1492041600">13/04/2017</option>
+		  <option value="1492128000">14/04/2017</option>
+		  <option value="1492214400">15/04/2017</option>
+		</select>
+		
+		<!-- drop-down list of time -->
+		<select id="time_id_dd">
+		</select>
+		
+		<button id="submit_btn">Submit</button>
+
+	</div>
+	
+	<div id="dynamic_table"></div>
+    
+    <script src="static/main.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-RQTdlhzRiy56n3lYamt1VekvLk5tJFg&callback=initMap">
     </script>
