@@ -1,4 +1,11 @@
 
+'''
+I used this file to test parts of my code as I was 
+developing this app.
+'''
+
+
+
 import time
 import datetime
 import lib.bikes_data as bikes_data
