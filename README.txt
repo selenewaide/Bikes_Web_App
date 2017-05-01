@@ -1,9 +1,7 @@
 From: Selene Waide
 Project: Dublin Bikes Web App
-Position Applied for: 
-Date: 1 May 2017
 
-1. Link to repo:
+1. Link to repo: https://github.com/selenewaide/Bikes_Web_App.git
 
 2. About the code:
 This application has been written by me. It is a full stack solution.
